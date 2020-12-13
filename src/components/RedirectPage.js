@@ -9,7 +9,7 @@ class RedirectPage extends Component{
     
     try{
       if(_.isEmpty(location.hash)){
-        return history.push('/dashboard');
+        return history.push('/react-spotify/dashboard');
       }
 
       const access_token = getParamValues(location.hash);
@@ -18,10 +18,10 @@ class RedirectPage extends Component{
       localStorage.setItem('expiry_time', expiryTime);
       console.log(expiryTime);
       setExpiryTime(expiryTime);
-      history.push('/dashboard');
+      history.push('/react-spotify/dashboard');
 
     }catch(error){
-      history.push('/');
+      history.push('/react-spotify/');
     }
   }
 
