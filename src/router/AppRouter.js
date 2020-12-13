@@ -40,20 +40,20 @@ class AppRouter extends Component{
         <div className="main">
           <Switch>
             <Route 
-              path="/" 
+              path="/react-spotify/" 
               exact={ true }
               render={(props)=> (
                 <Home isValidSession={this.isValidSession} {...props} />  
               )}   
             />
             <Route 
-              path="/redirect" 
+              path="/react-spotify/redirect" 
               render={props => (
                 <RedirectPage setExpiryTime={this.setExpiryTime} {...props} /> 
               )} 
             />
             <Route 
-              path="/dashboard" 
+              path="/react-spotify/dashboard" 
               render={(props) => (
                 <Dashboard isValidSession={this.isValidSession} {...props} />
               )}
