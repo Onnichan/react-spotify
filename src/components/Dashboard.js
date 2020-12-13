@@ -28,7 +28,7 @@ const Dashboard = (props) => {
       })
     }else{
       history.push({
-        pathname: '/',
+        pathname: '/react-spotify/',
         state: {
           session_expired: true
         }
@@ -56,7 +56,7 @@ const Dashboard = (props) => {
       setIsLoading(false);
     }else{
       history.push({
-        pathname:'/',
+        pathname:'/react-spotify/',
         state:{
           session_expired: true
         }
@@ -89,7 +89,7 @@ const Dashboard = (props) => {
       ): (
         <Redirect 
           to={{
-            pathname: '/',
+            pathname: '/react-spotify/',
             state: {
               session_expired: true
             }

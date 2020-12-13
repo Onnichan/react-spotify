@@ -21,7 +21,7 @@ const SearchResult = props => {
     return (
       <Redirect 
         to={{
-          pathname: '/',
+          pathname: '/react-spotify/',
           state: {
             session_expired: true
           }
